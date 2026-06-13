@@ -693,7 +693,31 @@ to{
 .gallery{
 
 
-    width:90%;
+    display:none;
+
+
+    margin-top:40px;
+
+
+    background:white;
+
+
+    padding:50px;
+
+
+    border-radius:30px;
+
+
+    width:600px;
+
+
+    text-align:center;
+
+
+    animation:
+
+    aparecerFotos .8s ease;
+
 
 
 }
@@ -717,19 +741,42 @@ to{
 .final-message{
 
 
-    margin-top:35px;
+    margin-top:40px;
 
 
-    color:#555;
+    padding:25px;
 
 
-    font-size:18px;
+    background:rgba(255, 154, 158, 0.15);
 
 
-    line-height:1.6;
+
+    border-radius:20px;
+
+
+
+    color:#ff4f81;
+
+
+
+    font-size:20px;
+
+
+
+    font-weight:500;
+
+
+
+    line-height:1.7;
+
+
+
+    text-align:center;
+
 
 
     font-style:italic;
+
 
 
 }
