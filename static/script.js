@@ -1,3 +1,8 @@
+// ===============================
+// CORAÇÕES FLUTUANDO NO FUNDO
+// ===============================
+
+
 const heartsContainer = document.querySelector(".hearts");
 
 
@@ -15,15 +20,13 @@ function createHeart(){
 
 
 
+    // posição aleatória na tela
+
     heart.style.left = Math.random() * 100 + "%";
 
 
 
-    heart.style.animationDuration =
-
-    Math.random() * 5 + 5 + "s";
-
-
+    // tamanho aleatório
 
     heart.style.fontSize =
 
@@ -31,9 +34,19 @@ function createHeart(){
 
 
 
+    // velocidade aleatória
+
+    heart.style.animationDuration =
+
+    Math.random() * 5 + 5 + "s";
+
+
+
     heartsContainer.appendChild(heart);
 
 
+
+    // remove depois da animação
 
     setTimeout(()=>{
 
@@ -41,12 +54,15 @@ function createHeart(){
         heart.remove();
 
 
-    },8000)
+    },8000);
+
 
 
 }
 
 
+
+// cria corações continuamente
 
 setInterval(createHeart,300);
 
@@ -54,24 +70,38 @@ setInterval(createHeart,300);
 
 
 
-// CARTA
+// ===============================
+// ABRIR CARTA
+// ===============================
+
 
 
 const button = document.getElementById("openLetter");
 
+
+const welcome = document.getElementById("welcome");
+
+
 const letter = document.getElementById("letter");
 
-const card = document.querySelector(".card");
+
 
 
 
 button.addEventListener("click",()=>{
 
 
-    letter.classList.add("show");
+
+    // esconde tela inicial
+
+    welcome.classList.add("esconder");
 
 
-    card.classList.add("hide");
+
+    // mostra carta
+
+    letter.style.display = "block";
+
 
 
 });
