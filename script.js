@@ -105,3 +105,26 @@ button.addEventListener("click",()=>{
 
 
 });
+
+// ===============================
+// ABRIR FOTOS
+// ===============================
+
+
+const photosButton = document.getElementById("openPhotos");
+
+
+const gallery = document.getElementById("gallery");
+
+
+
+photosButton.addEventListener("click",()=>{
+
+
+    gallery.style.display = "block";
+
+
+    photosButton.innerHTML = "❤️ Nossas memórias";
+
+
+});
