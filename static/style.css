@@ -1,0 +1,302 @@
+/* RESET */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+/* CONFIGURAÇÃO GERAL */
+
+body{
+
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    overflow:hidden;
+
+
+    font-family:
+    'Segoe UI',
+    Arial,
+    sans-serif;
+
+
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff9a9e,
+        #fad0c4,
+        #ffdde1
+    );
+
+
+}
+
+
+
+/* FUNDO DOS CORAÇÕES */
+
+.hearts{
+
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    top:0;
+
+    left:0;
+
+    pointer-events:none;
+
+
+}
+
+
+
+/* CARD CENTRAL */
+
+
+.container{
+
+
+    position:relative;
+
+    z-index:2;
+
+
+}
+
+
+
+.card{
+
+
+    background:
+
+    rgba(255,255,255,0.25);
+
+
+
+    backdrop-filter:blur(10px);
+
+
+    padding:60px 50px;
+
+
+    border-radius:30px;
+
+
+    text-align:center;
+
+
+    width:600px;
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,0.2);
+
+
+}
+
+
+
+
+h1{
+
+
+    font-size:45px;
+
+
+    color:white;
+
+
+    line-height:1.2;
+
+
+    margin-bottom:20px;
+
+
+
+}
+
+
+
+p{
+
+
+    color:white;
+
+
+    font-size:20px;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+/* BOTÃO */
+
+
+button{
+
+
+    border:none;
+
+
+    padding:15px 40px;
+
+
+    border-radius:50px;
+
+
+    font-size:18px;
+
+
+    cursor:pointer;
+
+
+    background:white;
+
+
+    color:#ff4f81;
+
+
+    font-weight:bold;
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+button:hover{
+
+
+    transform:scale(1.1);
+
+
+    background:#ff4f81;
+
+
+    color:white;
+
+
+}
+
+
+
+/* CORAÇÃO CRIADO PELO JS */
+
+
+.heart{
+
+
+    position:absolute;
+
+
+    bottom:-20px;
+
+
+    color:#ff4f81;
+
+
+    animation:
+
+    subir 8s linear infinite;
+
+
+
+    font-size:25px;
+
+
+}
+
+
+
+@keyframes subir{
+
+
+    0%{
+
+
+        transform:
+
+        translateY(0)
+
+        rotate(0deg);
+
+
+        opacity:1;
+
+    }
+
+
+
+    100%{
+
+
+        transform:
+
+        translateY(-110vh)
+
+        rotate(360deg);
+
+
+
+        opacity:0;
+
+
+    }
+
+
+}
+
+
+
+/* RESPONSIVO */
+
+@media(max-width:700px){
+
+
+.card{
+
+
+    width:90%;
+
+    padding:40px 25px;
+
+}
+
+
+
+h1{
+
+    font-size:32px;
+
+}
+
+
+
+}
