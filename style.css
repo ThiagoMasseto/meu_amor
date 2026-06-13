@@ -507,39 +507,61 @@ to{
 @media(max-width:700px){
 
 
-.card,
-.letter{
+    .card,
+    .letter,
+    .gallery{
 
 
-    width:90%;
+        width:92%;
 
 
-    padding:40px 25px;
+        padding:30px 20px;
 
 
-}
-
-
-
-
-h1{
-
-
-    font-size:32px;
-
-
-}
+    }
 
 
 
-
-.letter h2{
-
-
-    font-size:26px;
+    h1{
 
 
-}
+        font-size:30px;
+
+
+    }
+
+
+
+    .letter h2{
+
+
+        font-size:26px;
+
+
+    }
+
+
+
+    .letter p{
+
+
+        font-size:17px;
+
+
+    }
+
+
+
+    .final-message{
+
+
+        font-size:16px;
+
+
+        padding:20px;
+
+
+    }
 
 
 
@@ -596,18 +618,13 @@ h1{
 
 .photos{
 
-
     display:flex;
-
 
     justify-content:center;
 
-
     gap:20px;
 
-
     flex-wrap:wrap;
-
 
 }
 
@@ -616,10 +633,10 @@ h1{
 .photos img{
 
 
-    width:160px;
+    width:180px;
 
 
-    height:200px;
+    height:220px;
 
 
     object-fit:cover;
@@ -727,13 +744,14 @@ to{
 .photos img{
 
 
-    width:120px;
+        width:140px;
 
 
-    height:160px;
+        height:180px;
 
 
-}
+    }
+
 
 
 }
