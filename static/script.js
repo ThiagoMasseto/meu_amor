@@ -44,10 +44,8 @@ function createHeart(){
     },8000)
 
 
-
 }
 
 
 
 setInterval(createHeart,300);
-s
