@@ -49,3 +49,29 @@ function createHeart(){
 
 
 setInterval(createHeart,300);
+
+
+
+
+
+// CARTA
+
+
+const button = document.getElementById("openLetter");
+
+const letter = document.getElementById("letter");
+
+const card = document.querySelector(".card");
+
+
+
+button.addEventListener("click",()=>{
+
+
+    letter.classList.add("show");
+
+
+    card.classList.add("hide");
+
+
+});
