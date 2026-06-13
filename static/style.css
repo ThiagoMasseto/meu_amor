@@ -23,7 +23,7 @@ body{
     align-items:center;
 
 
-    overflow:hidden;
+    overflow-x:hidden;
 
 
     font-family:'Segoe UI', Arial, sans-serif;
@@ -54,21 +54,21 @@ body{
 
 .container{
 
-
     position:relative;
-
 
     z-index:2;
 
+    width:100%;
+
+    min-height:100vh;
 
     display:flex;
 
-
     justify-content:center;
-
 
     align-items:center;
 
+    padding:40px 20px;
 
 }
 
